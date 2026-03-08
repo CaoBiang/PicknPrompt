@@ -1,0 +1,108 @@
+@import 'antd/dist/reset.css';
+
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #233142;
+  background: #f5f7fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+.app-page {
+  min-height: 100vh;
+}
+
+.panel-surface {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #d7dee8;
+  border-radius: 16px;
+  box-shadow: 0 10px 32px rgba(27, 43, 65, 0.08);
+}
+
+.thin-scrollbar {
+  scrollbar-width: thin;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(79, 107, 149, 0.28);
+  border-radius: 999px;
+}
+
+.conversation-drawer__create-button {
+  height: 34px;
+  padding-inline: 12px;
+  border-radius: 10px;
+}
+
+.conversation-drawer__list.ant-conversations {
+  padding: 0;
+  gap: 8px;
+}
+
+.conversation-drawer__list .ant-conversations-item {
+  height: 34px;
+  min-height: 34px;
+  padding-inline: 12px;
+  border-radius: 10px;
+}
+
+.conversation-drawer__list .ant-conversations-label {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: visible;
+}
+
+.conversation-item__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.conversation-item__text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.conversation-item__delete {
+  flex: none;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.conversation-drawer__list .ant-conversations-item:hover .conversation-item__delete,
+.conversation-drawer__list .ant-conversations-item-active .conversation-item__delete,
+.conversation-item__delete.ant-popover-open {
+  opacity: 1;
+  pointer-events: auto;
+}

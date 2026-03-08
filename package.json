@@ -1,0 +1,58 @@
+{
+  "name": "picknprompt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PicknPrompt：一个面向 Edge/Chrome 的 AI 对话侧边栏扩展。",
+  "scripts": {
+    "dev": "wxt",
+    "dev:edge": "wxt -b edge",
+    "build": "wxt build",
+    "build:edge": "wxt build -b edge",
+    "zip": "wxt zip",
+    "postinstall": "wxt prepare",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaoBiang/PicknPrompt.git"
+  },
+  "homepage": "https://github.com/CaoBiang/PicknPrompt#readme",
+  "bugs": {
+    "url": "https://github.com/CaoBiang/PicknPrompt/issues"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.1.0",
+    "@ant-design/x": "^2.3.0",
+    "@ant-design/x-markdown": "^2.3.0",
+    "@ant-design/x-sdk": "^2.3.0",
+    "antd": "^6.3.1",
+    "dayjs": "^1.11.19",
+    "dexie": "^4.3.0",
+    "fflate": "^0.8.2",
+    "gray-matter": "^4.0.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/chrome": "^0.1.24",
+    "@types/node": "^24.7.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@wxt-dev/module-react": "^1.2.1",
+    "fake-indexeddb": "^6.2.5",
+    "jsdom": "^28.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.10",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^4.0.0",
+    "wxt": "^0.20.18"
+  }
+}

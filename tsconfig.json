@@ -1,0 +1,22 @@
+{
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "types": [
+      "chrome",
+      "node"
+    ]
+  },
+  "include": [
+    "entrypoints",
+    "src",
+    "wxt.config.ts",
+    "vitest.config.ts"
+  ]
+}
